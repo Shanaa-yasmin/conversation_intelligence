@@ -1,0 +1,51 @@
+{
+  "domain": "telecom",
+  "industry": "telecommunications",
+  "policies": [
+    {
+      "id": "TELECOM_ROAM_1.1.1",
+      "text": "Roaming charges must be clearly disclosed before activation. Agents must provide written confirmation.",
+      "category": "disclosure",
+      "severity_if_violated": "high",
+      "regulatory_basis": "TRAI Regulations",
+      "keywords": ["roaming", "international", "charges", "rates"],
+      "violation_patterns": ["no roaming charges", "free roaming", "minimal charges"]
+    },
+    {
+      "id": "TELECOM_SLA_2.1.1",
+      "text": "Service Level Agreements (SLA) must not be over-promised. Network quality depends on location and traffic.",
+      "category": "sla",
+      "severity_if_violated": "high",
+      "regulatory_basis": "TRAI QoS Guidelines",
+      "keywords": ["SLA", "guarantee", "4G", "coverage", "speed"],
+      "violation_patterns": ["guaranteed 4G", "100% coverage", "fastest network", "always connected"]
+    },
+    {
+      "id": "TELECOM_CONSENT_3.1.1",
+      "text": "Customer explicit consent required for plan changes, recharge, or new service activation.",
+      "category": "consent",
+      "severity_if_violated": "medium",
+      "regulatory_basis": "Consumer Protection, TRAI",
+      "keywords": ["plan change", "upgrade", "recharge", "activation"],
+      "violation_patterns": []
+    },
+    {
+      "id": "TELECOM_REFUND_4.1.1",
+      "text": "Refund policy: Unused plan credits refundable within 30 days of purchase. No refund after 30 days.",
+      "category": "refund",
+      "severity_if_violated": "medium",
+      "regulatory_basis": "Consumer Protection Act",
+      "keywords": ["refund", "credit", "money back", "cancellation"],
+      "violation_patterns": []
+    },
+    {
+      "id": "TELECOM_PORT_5.1.1",
+      "text": "Porting process: Customer must be informed of all charges and timelines. No hidden costs.",
+      "category": "porting",
+      "severity_if_violated": "medium",
+      "regulatory_basis": "TRAI Porting Regulations",
+      "keywords": ["port", "switch", "number portability", "MNP"],
+      "violation_patterns": []
+    }
+  ]
+}

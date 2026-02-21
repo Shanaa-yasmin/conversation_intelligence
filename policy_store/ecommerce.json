@@ -1,0 +1,42 @@
+{
+  "domain": "ecommerce",
+  "industry": "retail",
+  "policies": [
+    {
+      "id": "ECOM_RETURN_1.1.1",
+      "text": "Return window must not exceed company policy (default 30 days). No agent discretion beyond policy.",
+      "category": "returns",
+      "severity_if_violated": "high",
+      "regulatory_basis": "Consumer Protection Act",
+      "keywords": ["return", "return period", "days", "refund"],
+      "violation_patterns": ["we can extend", "I can give you", "special return window"]
+    },
+    {
+      "id": "ECOM_REFUND_2.1.1",
+      "text": "Refund timelines must follow standard SLA (typically 5-7 business days post approval).",
+      "category": "refund",
+      "severity_if_violated": "medium",
+      "regulatory_basis": "Consumer Protection Act",
+      "keywords": ["refund", "money back", "credit", "timeline"],
+      "violation_patterns": []
+    },
+    {
+      "id": "ECOM_WARRANTY_3.1.1",
+      "text": "Warranty promises must match product specification. No verbal warranty extensions beyond standard terms.",
+      "category": "warranty",
+      "severity_if_violated": "high",
+      "regulatory_basis": "Consumer Protection Act",
+      "keywords": ["warranty", "guarantee", "coverage", "extend", "replacement"],
+      "violation_patterns": []
+    },
+    {
+      "id": "ECOM_DISCOUNT_4.1.1",
+      "text": "Discounts and promotions must be approved by management. Agents cannot offer discretionary discounts.",
+      "category": "pricing",
+      "severity_if_violated": "medium",
+      "regulatory_basis": "Internal Policy",
+      "keywords": ["discount", "offer", "special price", "coupon"],
+      "violation_patterns": ["let me give you", "special price just for you"]
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "domain": "banking",
+  "industry": "finance",
+  "policies": [
+    {
+      "id": "BANK_SEC_3.2.1",
+      "text": "Agents must never request OTP (One-Time Password) from customers via voice or verbally.",
+      "category": "security",
+      "severity_if_violated": "critical",
+      "regulatory_basis": "RBI Guidelines, PCI-DSS",
+      "keywords": ["OTP", "one-time password", "one time password", "code sent"],
+      "violation_patterns": ["share the OTP", "give me the OTP", "what is your OTP", "send your OTP"]
+    },
+    {
+      "id": "BANK_SEC_3.2.2",
+      "text": "Agents must never request CVV/CVC (Card Verification Value) from customers.",
+      "category": "security",
+      "severity_if_violated": "critical",
+      "regulatory_basis": "PCI-DSS v3.2.1",
+      "keywords": ["CVV", "CVC", "card verification", "security code"],
+      "violation_patterns": ["give me your CVV", "what is your CVV", "card security code"]
+    },
+    {
+      "id": "BANK_KYC_4.1.1",
+      "text": "KYC verification must be completed before account opening. Agents must not skip verification steps.",
+      "category": "kyc",
+      "severity_if_violated": "high",
+      "regulatory_basis": "PMLA 2002, AML Standards",
+      "keywords": ["KYC", "identity verification", "address proof"],
+      "violation_patterns": ["skip verification", "we don't need to verify", "no need for documents"]
+    },
+    {
+      "id": "BANK_DISC_5.1.1",
+      "text": "Agents must provide mandatory disclaimer: 'This is not investment advice' before discussing financial products.",
+      "category": "disclosure",
+      "severity_if_violated": "high",
+      "regulatory_basis": "SEBI Regulations",
+      "keywords": ["investment advice", "financial product", "mutual fund", "stock"],
+      "violation_patterns": []
+    },
+    {
+      "id": "BANK_DATA_6.1.1",
+      "text": "Customer data (SSN, Aadhaar, PAN) must not be transmitted verbally. Use secure channels only.",
+      "category": "data_protection",
+      "severity_if_violated": "critical",
+      "regulatory_basis": "GDPR, Data Protection Act",
+      "keywords": ["SSN", "Aadhaar", "PAN", "personal identifier", "social security"],
+      "violation_patterns": []
+    },
+    {
+      "id": "BANK_LOAN_7.1.1",
+      "text": "Agents must not promise specific loan approval or interest rates. All products subject to bank approval.",
+      "category": "loan",
+      "severity_if_violated": "high",
+      "regulatory_basis": "Consumer Protection Act",
+      "keywords": ["loan approval", "interest rate", "guaranteed", "approved"],
+      "violation_patterns": ["you are approved", "guaranteed interest", "assured loan", "100% will get loan"]
+    },
+    {
+      "id": "BANK_REFUND_8.1.1",
+      "text": "Refund timelines must match bank policy. No promises outside standard SLA.",
+      "category": "refund",
+      "severity_if_violated": "medium",
+      "regulatory_basis": "RBI Customer Service Guidelines",
+      "keywords": ["refund", "revert", "credit", "timeline"],
+      "violation_patterns": []
+    }
+  ]
+}

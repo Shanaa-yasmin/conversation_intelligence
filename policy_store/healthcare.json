@@ -1,0 +1,33 @@
+{
+  "domain": "healthcare",
+  "industry": "medical",
+  "policies": [
+    {
+      "id": "HEALTH_HIPAA_1.1.1",
+      "text": "All patient health information is protected under HIPAA. Agents must not discuss patient data without explicit consent.",
+      "category": "privacy",
+      "severity_if_violated": "critical",
+      "regulatory_basis": "HIPAA",
+      "keywords": ["medical history", "health condition", "diagnosis", "medication"],
+      "violation_patterns": []
+    },
+    {
+      "id": "HEALTH_DISCLAIMER_2.1.1",
+      "text": "No diagnosis or medical advice can be provided. Agents must always recommend consulting a physician.",
+      "category": "legal",
+      "severity_if_violated": "critical",
+      "regulatory_basis": "Medical Practice Act",
+      "keywords": ["diagnosis", "prescription", "treatment", "medicine"],
+      "violation_patterns": ["you have", "this means", "take this medication"]
+    },
+    {
+      "id": "HEALTH_REFERRAL_3.1.1",
+      "text": "Referrals to specialists must follow referral protocols. No guarantee of specialist acceptance.",
+      "category": "referral",
+      "severity_if_violated": "high",
+      "regulatory_basis": "Medical Practice Standards",
+      "keywords": ["specialist", "referral", "appointment", "guarantee"],
+      "violation_patterns": []
+    }
+  ]
+}
